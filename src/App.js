@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import ParticipantRouter from "./routers/ParticipantRouter";
+import FacultyRouter from "./routers/FacultyRouter";
+import CourseRouter from "./routers/CourseRouter";
+import ParticipantFeedbackRouter from "./routers/ParticipantFeedbackRouter";
+import Footer from "./components/Footer";
+import SkillsRouter from "./routers/SkillsRouter";
 
 function App() {
-  return (
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="page-container">
+        <div className="content-wrap">
+     <ParticipantRouter/>
+     <FacultyRouter/>
+     <CourseRouter/>
+     <ParticipantFeedbackRouter/>
+     <SkillsRouter/>
+     </div>
+     </div>
+     <Footer/>
     </div>
   );
 }

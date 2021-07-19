@@ -1,0 +1,9 @@
+.nav-style {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 1366px) {
+  .nav-style {
+    margin-left: 240px;
+  }
+}
